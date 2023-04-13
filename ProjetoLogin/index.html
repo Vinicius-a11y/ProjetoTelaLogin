@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+
 </head>
 <body>
     <!--Cabeçalho-->
    <div class="tela-login">
 
-    <h1 class="titulo">Login</h1>
+    <form method="post"> 
+        <h1 class="titulo">Login</h1>
 
-    <input type="text" placeholder="Nome" class="nomes">
-
-    <br><br>
-
-    <input type="password" placeholder="Senha" class="senhas">
-
-    <button class="botão">Enviar</button>
+        <input type="user" placeholder="Nome" class="nomes" autofocus required>
+    
+        <br><br>
+    
+        <input type="password" placeholder="Senha" class="senhas" required>
+    
+        <input class="botão" type="submit" value="Entrar" id="spinner">
+    </form>
 
    </div>
-   
 </body>
 </html>
